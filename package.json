@@ -1,0 +1,23 @@
+{
+  "name": "typescript-tutorials",
+  "version": "1.0.0",
+  "description": "TypeScript Tutorials for GitHub",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikhailMasny/typescript-tutorials.git"
+  },
+  "keywords": [
+    "typescript",
+    "ts"
+  ],
+  "author": "Mikhail M.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikhailMasny/typescript-tutorials/issues"
+  },
+  "homepage": "https://github.com/MikhailMasny/typescript-tutorials#readme"
+}
