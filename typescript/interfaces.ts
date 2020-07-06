@@ -73,3 +73,48 @@ const css: Style = {
     padding: "1px",
     marging: "1px"
 }
+
+interface IPerson {
+    name: string,
+    fullName?: string,
+    age: number
+}
+
+type PersonType = {
+    name: string,
+    fullName?: string,
+    age: number
+}
+
+const firstPerson : PersonType = {
+    age: 111,
+    name: 'text'
+}
+
+const secondPerson : PersonType = {
+    age: 222,
+    name: 'text',
+    fullName: 'text text'
+}
+
+const anotherPerson: IPerson = {
+    age: 333,
+    name: 'another text'
+}
+
+class SomeSimpleClass {
+    myProp: string | null;
+}
+
+interface IUser extends IPerson {
+    useFunc(): string,
+}
+
+class Employee extends SomeSimpleClass implements IUser {
+    name: string = 'text';
+    age: number = 111;
+
+    useFunc() {
+        return `${this.name}${this.age}`;
+    }
+}

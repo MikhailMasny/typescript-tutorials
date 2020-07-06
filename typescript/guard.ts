@@ -4,7 +4,7 @@ function ex(x: number | boolean) {
     }
 
     return x;
-  }
+}
 
 class MyFirstClass {
     prop1 = "One";
@@ -16,7 +16,7 @@ class MySecondClass {
     prop2 = "Four";
 }
 
-function test(result: MyFirstClass | MySecondClass): object {
+function simpleTest(result: MyFirstClass | MySecondClass): object {
     if (result instanceof MyFirstClass) {
         return {
             messageOne: result.prop1 + result.prop2

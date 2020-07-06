@@ -1,5 +1,20 @@
+class SimpleClass {
+    prop1 : string;
+    prop2 : number;
+    prop3 : number[];
+}
+
+let sc = new SimpleClass();
+sc.prop1 = 'text';
+sc.prop2 = 123;
+sc.prop3 = [1, 2, 3];
+
 class TypeScript {
     version: string;
+    public publicProp: string;
+    private privateProp: string;
+    protected protectedProp: number;
+    readonly readonlyProp: number;
 
     constructor(version: string) {
         this.version = version;
@@ -52,7 +67,6 @@ class MyExtendedClass extends MyClass {
 const test = new MyExtendedClass();
 test.secondFunc("test");
 console.log(test.prop2);
-
 
 
 // Using abstract classes.

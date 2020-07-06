@@ -6,6 +6,15 @@ const secondArray: Array<number> = [1, 2, 3];
 const words: string[] = ["Hello", "TypeScript", "!"];
 const typle: [string, number] = ["Hello", 123];
 
+typeof 42;          // "number"
+typeof 'str';       // "string"
+typeof true;        // "boolean"
+typeof [];          // "object"
+typeof {};          // "object"
+typeof null;        // "object"
+typeof undefined;   // "undefined"
+typeof Symbol();    // "symbol"
+
 let variable: any = 123;
 variable = "123";
 variable = [1, 2, 3];
